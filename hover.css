@@ -1,0 +1,74 @@
+.Groww-loginRegister button:hover{
+    background-color: #04c595;
+}
+
+/* Our Product  */
+.GrowwProduct-stocksDetails:hover svg{
+    filter: brightness();
+}
+.GrowwProduct-mutualFundsDetails:hover svg{
+    filter: brightness();
+}
+.GrowwProduct-UsStocksDetails:hover svg{
+    filter: brightness();
+}
+.GrowwProduct-FDsDetails:hover svg{
+    filter: brightness();
+}
+.GrowwProduct-Button-CreateAccountFree-1:hover{
+    background-color: #04c595;
+}
+.Groww-startedButton:hover{
+    background-color: #04c595;
+}
+
+/* View all product */
+.viewAllProduct-container .text:hover{
+    text-decoration: underline;
+
+}
+        /* Learnig part */
+.GrowwLearning-img:hover::before{
+    width: 350px;
+    height: 275px;
+    position: absolute;
+    content: "";
+    z-index: 20;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.GrowwLearning-moreSection a:hover{
+    text-decoration: underline;
+}
+
+
+/* In Press section */
+.GrowwInPress-Name img:hover{
+    filter: brightness();
+
+}
+
+/* Investor review */
+
+.GrowwInvestor-moresection a:hover{
+    color: #00d09c;
+    text-decoration: underline;
+}
+.GrowwInvestor-ReviewBox:hover{
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.1),
+    10px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.applist:hover{
+    transform: skew(5deg,5deg);
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*  Support*/
+.SupportSection_left button:hover{
+    background-color: #e1dcdc;
+    color: #fff;
+}

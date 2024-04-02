@@ -1,0 +1,7 @@
+.LoginBodyRightGoogleConTainer:hover{
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.08),
+    5px 5px 10px rgba(0,0,0,0.2);
+}
+.ContinueButton:hover{
+    background-color: #04c595;
+}
