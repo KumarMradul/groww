@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Baloo+Bhaijaan+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&family=Bree+Serif&family=Cormorant+Upright:wght@300;400;500;600;700&family=Ojuju:wght@200..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    padding-left: 12%;
+}
+.Groww-Top{
+    /* width: 100vw; */
+    height: 83px;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Groww-logo{
+    width: 150px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+}
+.Groww-logo img{
+    width: 148px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* search */
+.Groww-searchContainer{
+    /* border: 1px solid #ccc; */
+    width: 443px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px rgba(148, 148, 148, 0.2),
+    2px 2px 5px rgba(148, 148, 148, 0.2);
+}
+
+.Groww-searchContainer input{
+    margin: 0px 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.Groww-searchContainer i{
+    font-size: 15px;
+    color: rgba(148, 148, 148);
+}
+.Groww-loginRegister{
+    /* background-color: rgba(0, 255, 0); */
+    width: 246px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+
+}
+.Groww-loginRegister button{
+    background-color: #00d09c;
+    border: none;
+    width: 175px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bankAndAutoPay i{
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.dropdown-menu {
+    width: 750%;
+    height: 80vh;
+}
+.dropdown-item i{
+    padding-right: 15px;
+}
+#dropdown-item {
+    padding: 16px;
+}
+
+/* checkbox */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: rgb(204, 200, 200);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+    margin-left: 150px;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #00d09c;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+/* Stocks and Mutual Funds */
+.stockAndMutualFunds{
+    display: flex;
+    gap:35px;
+    margin-left: 80px;
+    margin-top: 45px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* After horizontal line */
+.time{
+    margin-left: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #44475b; */
+}
+
+/* Container */
+
+.indexAndAllIndices{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+.index{
+    font-size: 20px;
+    font-weight: 600;
+}
+.allIndices{
+    color: #00d09c;
+}
+
+/* Dark mood */
+body.dark-mode {
+    background-color: #222;
+    color: #ccc;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .indexAndAllIndices {
+    color: #00d09c; /* Color for links in dark mode */
+}
+
+/* Checkbox toggle styles */
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: rgb(204, 200, 200);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 150px;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background: #00d09c;
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+.dark-mode .dropdown-toggle-split::after {
+    color: #fff !important; 
+}

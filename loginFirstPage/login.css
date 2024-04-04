@@ -42,7 +42,6 @@
 .LoginBodyLeftBottom{
     width: 300px;
     height: 100px;
-    /* background-color: red; */
     margin:0px 0px 40px 50px;
     display: flex;
     justify-content: center;
@@ -79,7 +78,7 @@
 
 }
 .LoginBodyRighth1{
-    margin:60px 0px 50px 50px;
+    margin: 50px;
     font-size: 40px;
     color: #333;
 }
@@ -87,8 +86,6 @@
     width: 340px;
     height: 50px;
     border: 0.5px solid #e8e6e6;
-    /* box-shadow: -5px -5px 10px rgba(0,0,0,0.1),
-    5px 5px 10px rgba(0,0,0,0.1); */
     margin:0px 0px 50px 50px;
     border-radius: 5px;
     display: flex;
@@ -122,10 +119,10 @@
 .EmailContainer{
     display: flex;
     flex-direction: column;
-    margin:20px 50px 0px 50px;
+    margin:20px 30px 0px 50px;
+    margin-top: 40px;
     padding:5px;
     border-bottom: 1.5px solid #000;
-    /* width: 100%; */
 }
 .EmailText{
     font-size: 18px;
@@ -151,6 +148,18 @@
 /**continue button*/
 .ContinueButton{
     margin:20px 50px 0px 50px;
+    width:350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #26d7ab;
+    color:white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.SubmitButtton{
+    margin:50px 0px 0px 0px;
     width:350px;
     height: 50px;
     display: flex;
