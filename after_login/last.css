@@ -7,15 +7,12 @@
     box-sizing: border-box;
 }
 body{
-    width: 80%;
-    padding-left: 12%;
+    margin: 0;
+    padding: 0;
 }
 .Groww-Top{
-    /* width: 100vw; */
     height: 83px;
-    /* background-color: red; */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     justify-content: space-evenly;
 }
@@ -33,7 +30,6 @@ body{
 
 /* search */
 .Groww-searchContainer{
-    /* border: 1px solid #ccc; */
     width: 443px;
     height: 41px;
     display: flex;
@@ -55,24 +51,10 @@ body{
     font-size: 15px;
     color: rgba(148, 148, 148);
 }
-.Groww-loginRegister{
-    /* background-color: rgba(0, 255, 0); */
-    width: 246px;
-    height: 79px;
-    display: flex;
-    align-items: center;
 
-}
-.Groww-loginRegister button{
-    background-color: #00d09c;
-    border: none;
-    width: 175px;
-    height: 45px;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
+
+
 
 .bankAndAutoPay i{
     padding-top: 8px;
@@ -89,7 +71,7 @@ body{
     padding: 16px;
 }
 
-/* checkbox */
+/* checkbox
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -131,7 +113,7 @@ input:checked + label:after {
 
 label:active:after {
 	width: 45px;
-}
+} */
 
 /* Stocks and Mutual Funds */
 .stockAndMutualFunds{
@@ -142,14 +124,13 @@ label:active:after {
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
+    /* width: 60%; */
 }
 
 /* After horizontal line */
 .time{
-    margin-left: 80px;
     font-size: 16px;
     font-weight: 400;
-    /* color: #44475b; */
 }
 
 /* Container */
@@ -157,7 +138,8 @@ label:active:after {
 .indexAndAllIndices{
     display: flex;
     justify-content: space-between;
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    width: 100%;
 }
 .index{
     font-size: 20px;
@@ -227,4 +209,187 @@ label:active:after {
 }
 .dark-mode .dropdown-toggle-split::after {
     color: #fff !important; 
+}
+/* Container */
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+.left_Continer{
+    width: 65%;
+    height: 40vh;
+}
+
+.market-container{
+    display: flex;
+    gap: 20px;
+    box-sizing: 20px;
+    height: 150px; 
+}
+.nifty{
+    width: 35%;
+    height: 70px;
+    border-radius: 8px ;
+    border: 1px solid rgba(173, 170, 170);;
+    padding: 14px 16px;
+    
+}
+.sensex{
+    width: 35%;
+    height: 70px;
+    border-radius: 8px;
+    border: 1px solid rgba(173, 170, 170);;
+    padding: 14px 16px;
+}
+.bankNifty{
+    width: 35%;
+    height: 70px;
+    border-radius: 8px;
+    border: 1px solid rgba(173, 170, 170);;
+    padding: 14px 16px;
+}
+/* Nifty stock price  */
+#stockInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 18px;
+}
+#stockInfo p {
+    margin: 0;
+}
+
+/* Sensex */
+.graph-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 18px;
+}
+.graph-container p {
+    margin: 0;
+}
+
+/* BankNifty */
+.graph-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 18px;
+}
+.graph-container p {
+    margin: 0;
+}
+/* Right Container */
+.right_Container{
+    position: relative;
+    width: 45%;
+}
+.your-Investments{
+    display: flex;
+    gap: 40%;
+    margin-left: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.money{
+    border: 1px solid rgba(173, 170, 170);;
+    border-radius: 8px;
+}
+.investment-money{
+    display: flex;
+    gap: 80%;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.return_current{
+    display: flex;
+    gap: 50%;
+    margin-left: 20px;
+}
+.all_watchlists{
+    display: flex;
+    gap: 60%;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.watchlist{
+    display: flex;
+    gap: 68%;
+    border: 1px solid rgba(173, 170, 170);
+    border-radius: 8px;
+    height: 10vh;
+    
+}
+.user_watchlist{
+    margin-left: 30px;
+}
+.new-Watchlist{
+    display: flex;
+    gap: 8%;
+    border: 1px solid rgba(173, 170, 170);;
+    border-radius: 8px;
+    height: 7vh;
+}
+.pluse_icon{
+    margin-left: 30px;
+}
+.dashbord,
+.view-All{
+    color: #00d09c;
+}
+/* Most bought on Groww */
+
+.boxContainer{
+    display: flex;
+    width: 60%;
+    gap: 5px;
+    margin-left: 110px;
+
+}
+.stockBox{
+    height: 25vh;
+    width: 25vh;
+    /* background-color: red; */
+    border: 0.5px solid rgb(215, 212, 212);
+    border-radius: 5px;
+    margin-bottom: 55px;
+}
+.logo{
+    /* background-color: red; */
+    display: flex;
+}
+.logo img{
+    margin-top: 14px;
+    margin-left: 14px;
+    border: 0.5px solid rgb(173, 170, 170);
+    border-radius: 5px;
+}
+.logo i{
+    margin-top: 25px;
+    margin-left: 100px;
+    font-size: large;
+    opacity: 0;
+    /* align-items: center; */
+}
+.text{
+    margin-left: 15px;
+}
+
+/* Box graph */
+.graph-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.graph-container p {
+    margin: 0;
 }

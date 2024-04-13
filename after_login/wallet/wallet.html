@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww Balance | INR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b40cdf633b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="Groww-Top">
+        <div class="Groww-logo">
+            <img src="logo.svg" alt="Groww ">
+        </div>
+        <div class="explore">Explore</div>
+        <div class="investment">Investment</div>
+        <div class="Groww-searchContainer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What are you looking for today?" id="">
+        </div>
+        <div class="bell"><i class="fa-regular fa-bell"></i></div>
+        <div class="wallet"><i class="fa-solid fa-wallet"></i></div>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        <!-- Example split danger button -->
+<div class="btn-group">
+    <button type="button" class="btn "></button>
+    <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <div class="bankAndAutoPay">
+        <!-- <i class="fa-solid fa-building-columns"></i> -->
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-building-columns"></i>Bank & AutoPay</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-regular fa-folder"></i>Import Funds</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-bookmark"></i>Watchlist</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-regular fa-file"></i>Orders</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-regular fa-file-lines"></i>Reports</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-regular fa-calendar-days"></i>Sips</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-phone"></i>Customer Support 24x7</a></li>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-gear"></i>Setting</a></li>
+        <div class="sidebar">
+          <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-moon"></i>Dark Mode<input type="checkbox" id="switch" /><label for="switch"></label></a></li>
+        </div>
+        <li><a class="dropdown-item" href="#"id="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i>Log Out</a></li>
+      </div>
+    </ul>
+  </div>
+</div>
+<div class="inrBlance_txt">
+    <h4>INR Balance</h4>
+    <hr>
+</div>
+<div class="container">
+    <div class="right_Container">
+        <div class="right_Container1">
+            <div class="right_For_Stock">For stock F&O</div>
+            <div class="right_Notification"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="right_Balance"><b><span class="bigFont">₹0</span></b><span>.00</span></div>
+            
+            <hr>
+            <div class="rightContainer_middle">
+                <div class="usedBalance">Used balance</div>
+                <div class="balance_Number">₹0.00</div>
+                <div class="angle_Right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <hr>
+            <div class="all_transactions">
+                <div class="tramsactions">All transactions</div>
+                <div class="angle_Right1"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+
+        <div class="extra_margin">
+            <div class="extra_marginText">Get extra margin for trading</div>
+            <div class="extra_margin1">
+                <div class="zero_cost">Zero Cost Pledging</div>
+                <div class="angle_Right2"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="left_Container">
+        <div class="options">
+            <div class="option deposit active" onclick="toggleOption(this, 'deposit')">DEPOSIT</div>
+            <div class="option withdraw" onclick="toggleOption(this, 'withdraw')">WITHDRAW</div>
+        </div>
+        <hr>
+        <div class="deposit-section">
+            <div class="amount">
+                <div class="enterAmount">
+                    <div class="enterAmount1">Enter Amount</div>
+                    <input type="number" class="amount-input" value="5000" onchange="validateInput(this)">
+                </div>
+                <div class="add-amount-btns">
+                    <button class="add-amount-btn" onclick="addAmount(100)">+ ₹100</button>
+                    <button class="add-amount-btn" onclick="addAmount(500)">+ ₹500</button>
+                </div>
+            </div>
+            <button id="depositButton" class="depositButton">DEPOSIT MONEY</button>
+
+
+        </div>
+        <div class="withdraw-section" style="display: none;">
+            <div class="withdrawable">
+                Withdrawable:
+            </div>
+            <div class="withdraw_amount">
+                <div class="withdraw_amount1">Enter Amount</div>
+                <input type="number" class="amount-input">
+            </div>
+            <button class="action-btn" onclick="transferMoney()" id="WithdrawButton">Withdraw Money</button>
+            <div class="bank-details">
+                <!-- <input type="text" placeholder="Bank Name">
+                <input type="text" placeholder="Account Number"> -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="wallet.js"></script>
+</body>
+</html>

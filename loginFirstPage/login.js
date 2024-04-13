@@ -283,6 +283,6 @@ function ContinueButtonClickHnadler(){
               // Add code to display error message to the user
             }
     }
-    window.location.href = "./after_login/index1.html";
+    window.location.href = "./after_login/last.html";
         
 }

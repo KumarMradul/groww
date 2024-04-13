@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Baloo+Bhaijaan+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&family=Bree+Serif&family=Cormorant+Upright:wght@300;400;500;600;700&family=Ojuju:wght@200..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.Groww-Top{
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Groww-logo{
+    width: 150px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+}
+.Groww-logo img{
+    width: 148px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* search */
+.Groww-searchContainer{
+    width: 443px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px rgba(148, 148, 148, 0.2),
+    2px 2px 5px rgba(148, 148, 148, 0.2);
+}
+
+.Groww-searchContainer input{
+    margin: 0px 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.Groww-searchContainer i{
+    font-size: 15px;
+    color: rgba(148, 148, 148);
+}
+
+.bankAndAutoPay i{
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.dropdown-menu {
+    width: 750%;
+    height: 80vh;
+}
+.dropdown-item i{
+    padding-right: 15px;
+}
+#dropdown-item {
+    padding: 16px;
+}
+
+/* checkbox */
+/* input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: rgb(204, 200, 200);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+    margin-left: 150px;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #00d09c;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+} */
+
+/* Dark mood */
+body.dark-mode {
+    background-color: #222;
+    color: #ccc;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .indexAndAllIndices {
+    color: #00d09c; /* Color for links in dark mode */
+}
+
+/* Checkbox toggle styles */
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: rgb(204, 200, 200);
+    /* display: block; */
+    border-radius: 100px;
+    position: relative;
+    margin-left: 180px;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background: #00d09c;
+    
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+.dark-mode .dropdown-toggle-split::after {
+    color: #fff !important; 
+}
+/* Inr Balance  */
+.inrBlance_txt h4{
+    padding-left: 134px;
+    color: rgb(101, 100, 100);
+    font-size: 18px;
+    text-decoration: underline; 
+    text-decoration-color: #00d09c;
+}
+/* Container */
+.container{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.right_Container{
+    margin-top: 22px;
+    width: 60%;
+}
+.right_Container1{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.right_For_Stock{
+    /* background-color: red; */
+    padding-top: 30px ;
+    padding-left: 30px ;
+    margin-bottom: 8px;
+    font-size:  0.875rem;
+    color: #7c7e8c;
+}
+.right_Balance{
+    padding-left: 30px;
+}
+.bigFont{
+    font-size: 2.5rem;
+    color: #222;
+}
+.right_Notification{
+    padding-left: 600px;
+    /* margin-bottom: 40px; */
+}
+.rightContainer_middle{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.balance_Number{
+    padding-left: 430px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.angle_Right{
+    padding-top: 1px;
+    padding-left: 12px;
+}
+.all_transactions{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.angle_Right1{
+    padding-left: 470px;
+}
+.extra_margin{
+    /* background-color: red; */
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.extra_marginText{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.extra_margin1{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: #7c7e8c;
+}
+.left_Container{
+    /* background-color: red; */
+    width: 30%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.option {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+.active {
+    border-bottom: 2.5px solid #00d09c;
+}
+.enterAmount{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.amount-input {
+    width: 100px;
+    height: 5vh;
+    margin-right: 10px;
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Other browsers */
+    background-color: #d2f7ee;
+    color: #1dd3a6;
+    font-weight: 700;
+    border: none;
+}
+.amount-input::-webkit-outer-spin-button,
+.amount-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.action-btn {
+    width: 250px;
+    height: 5vh;
+    background-color: #1dd3a6;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+.bank-details {
+    margin-top: 20px;
+}
+
+.bank-details input {
+    margin-bottom: 10px;
+}
+
+.add-amount-btns {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 170px;
+}
+
+.add-amount-btn {
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    background-color: #d2f7ee;
+    color: #aeacac;
+}
+.depositButton{
+    width: 250px;
+    height: 5vh;
+    background-color: #1dd3a6;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 50px;
+    border-radius: 8px;
+    border: none;
+}
+.withdraw_amount{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
