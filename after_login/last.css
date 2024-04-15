@@ -52,10 +52,6 @@ body{
     color: rgba(148, 148, 148);
 }
 
-
-
-
-
 .bankAndAutoPay i{
     padding-top: 8px;
     padding-left: 20px;
@@ -71,51 +67,6 @@ body{
     padding: 16px;
 }
 
-/* checkbox
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 50px;
-	height: 25px;
-	background: rgb(204, 200, 200);
-	display: block;
-	border-radius: 100px;
-	position: relative;
-    margin-left: 150px;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 5px;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
-}
-
-input:checked + label {
-	background: #00d09c;
-}
-
-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 45px;
-} */
-
-/* Stocks and Mutual Funds */
 .stockAndMutualFunds{
     display: flex;
     gap:35px;
@@ -124,7 +75,6 @@ label:active:after {
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
-    /* width: 60%; */
 }
 
 /* After horizontal line */
@@ -138,7 +88,6 @@ label:active:after {
 .indexAndAllIndices{
     display: flex;
     justify-content: space-between;
-    /* margin-left: 70px; */
     width: 100%;
 }
 .index{
@@ -356,13 +305,11 @@ label:active:after {
 .stockBox{
     height: 25vh;
     width: 25vh;
-    /* background-color: red; */
     border: 0.5px solid rgb(215, 212, 212);
     border-radius: 5px;
     margin-bottom: 55px;
 }
 .logo{
-    /* background-color: red; */
     display: flex;
 }
 .logo img{
@@ -376,7 +323,6 @@ label:active:after {
     margin-left: 100px;
     font-size: large;
     opacity: 0;
-    /* align-items: center; */
 }
 .text{
     margin-left: 15px;
@@ -386,7 +332,6 @@ label:active:after {
 .graph-container1 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     font-size: 18px;
     margin-left: 15px;
 }

@@ -29,7 +29,7 @@ const IndexBody = document.getElementById("IndexBody");
 Groww_LoginRegisterClick.addEventListener("click",()=>{
     
     
-        let LoginContainer = document.createElement("div");
+        const LoginContainer = document.createElement("div");
         LoginContainer.classList.add("LoginAndRegisterContainer");
         IndexBody.appendChild(LoginContainer);
 
@@ -161,7 +161,17 @@ Groww_LoginRegisterClick.addEventListener("click",()=>{
         // console.log(ContinueButton);
             ContinueButton.addEventListener("click", () => {
             ContinueButtonClickHnadler();
+            
         });
+        // Add an event listener to the input field for the 'keydown' event
+
+        const inputField = document.querySelector(".InputTextBox");
+        inputField.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault(); 
+            ContinueButtonClickHnadler();
+    }
+});
     
         const GoogleButton = document.querySelector(".LoginBodyRightGoogleConTainerText");
         GoogleButton.addEventListener("click", () => {
@@ -242,12 +252,11 @@ function ContinueButtonClickHnadler(){
     SubmitButton.textContent = "Submit";
     LoginBodyRighth1.appendChild(SubmitButton);
     
+    // SubmitButton.tabIndex = 0;
     SubmitButton.addEventListener("click", () => {
         clickSubmit();
     });
- ;
-    // const SubmitButton = document.createElement("div");
-    // SubmitButton.textContent = "Submit";
+
 }
     const auth = getAuth(); //Initialize auth
     async function clickSubmit(){
