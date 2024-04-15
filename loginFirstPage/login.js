@@ -27,7 +27,7 @@ const Groww_LoginRegisterClick = document.querySelector(".Groww-loginRegister");
 const IndexBody = document.getElementById("IndexBody");
 
 Groww_LoginRegisterClick.addEventListener("click",()=>{
-    console.log("Button Active")
+    
     
         let LoginContainer = document.createElement("div");
         LoginContainer.classList.add("LoginAndRegisterContainer");
@@ -244,7 +244,6 @@ function ContinueButtonClickHnadler(){
     
     SubmitButton.addEventListener("click", () => {
         clickSubmit();
-        console.log('hello')
     });
  ;
     // const SubmitButton = document.createElement("div");
